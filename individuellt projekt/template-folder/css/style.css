@@ -1,0 +1,400 @@
+/************************
+GENERAL
+*************************/
+html {
+  background-color:#fdfdfd;
+  height:100%;
+}
+
+body {
+  max-width:100%;
+  min-width:240px;
+  position:relative;
+  margin:0 auto;
+  background:transparent;
+  height:100%;
+}
+
+.second {
+  height: 90%;
+  padding-bottom:50px;
+}
+
+header {
+  background: #fdfdfd;
+}
+
+footer {
+  text-align:center;
+}
+
+a:link {
+    text-decoration: none;
+
+}
+
+h1{
+  color:#fff;
+  text-align:center;
+  font-size:4em;
+  color:#53512a;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #000;
+    font-family: "Raleway",sans-serif;
+    font-size: 1.4em;
+    
+    opacity: 0.6;
+    text-align: center;
+    width: 100%;
+}
+
+/************************
+STARTPAGE
+*************************/
+
+section {
+  background: #cccccc url("../img/paper_texture_01.png") repeat scroll 0 0;
+  height: 240px;
+  margin: 0 auto;
+  min-width: 240px;
+  padding-top: 0.6em;
+  position: relative;
+  width: 100%;
+}
+
+.left-count{
+  background: #eeeeee;
+  float: left;
+  height: 200px;
+  margin-top: -200px;
+  width: 50%;
+  color:#fff;
+  opacity:0.7;
+  font-size: 2.5em;
+}
+
+.right-count{
+  background: #ddd;
+  float: right;
+  height: 200px;
+  margin-top: -200px;
+  width: 50%;
+  color:#fff;
+  opacity:0.7;
+  font-size: 2.5em;
+}
+
+/************************
+CV
+*************************/
+
+#frame {
+  width:50%;
+  margin:0 auto;
+  background:#eeeeee;
+  opacity:0.8;
+  text-align:left;
+  border:20px solid #fff;
+}
+
+#cv-first {
+  background-color:#eee;
+  padding:30px;
+}
+
+#cv-second {
+  background-color:#ddd;
+  padding:30px;
+}
+
+#showOrHideDiv {
+  display:none;
+  margin-top:30px;
+  background:#fff;
+  padding:10px;
+}
+
+#showOrHideDivSecond {
+  display:none;
+  margin-top:30px;
+  background:#fff;
+  padding:20px;
+}
+
+.show-more-button {
+  float:right;
+  margin-top:12px;
+}
+
+/************************
+KONTAKT
+*************************/
+
+#mail {
+  background:#ddd;
+  text-align:center;
+  padding:30px;
+}
+
+#phone {
+  background:#fff;
+  text-align:center;
+  padding:30px;
+}
+
+#location {
+  background:#eee;
+  text-align:center;
+  padding:30px;
+}
+
+/************************
+IMAGES
+*************************/
+
+.img-circle {
+   border-radius: 50%;
+}
+
+.index-img-wrap {
+  margin:0 auto;
+  max-width:160px;
+  min-width:160px;
+  max-height:160px;
+  min-height:160px;
+  border-radius:50%;
+  border:20px solid #eee;
+  margin-top:1em;
+  position:relative;
+  z-index:1;
+}
+
+/************************
+RESPONSIVE TOP-NAV
+*************************/
+
+ul.topnav {
+  background-color: transparent;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+  width:230px;
+  margin:0 auto;
+}
+
+ul.topnav li {
+  margin:0 auto;
+  float:left;
+}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #d7d7d7;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+
+ul.topnav li a:hover {
+  background-color: #999;
+}
+
+ul.topnav li.icon {
+  display: none;
+}
+
+/************************
+COUNTDOWN
+*************************/
+
+body {
+  text-align: center;
+  background: transparent;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.count-header {
+  color: #000000;
+  font-size: 0.7em;
+  margin-bottom: 40px;
+}
+
+#clockdiv {
+  font-family: sans-serif;
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+  margin-top:-30px;
+}
+
+#clockdiv > div {
+  padding: 10px;
+  background: transparent;
+  display: inline-block;
+}
+
+#clockdiv div > span {
+  padding: 15px;
+  border-radius: 20%;
+  background: #000;
+  display: inline-block;
+}
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+  color:#000;
+}
+
+#clockdiv-2 {
+  font-family: sans-serif;
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+  margin-top:-30px;
+}
+
+#clockdiv-2 > div {
+  padding: 10px;
+  background: transparent;
+  display: inline-block;
+}
+
+#clockdiv-2 div > span {
+  padding: 15px;
+  border-radius: 20%;
+  background: #000;
+  display: inline-block;
+}
+
+/*********************
+SHARE BUTTONS
+*************************/
+
+ul.share-buttons {
+  list-style: none;
+  padding: 0;
+  margin-top:65px;
+}
+
+ul.share-buttons li {
+  display: inline;
+}
+
+ul.share-buttons .sr-only {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+/************************
+MEDIA QURIES
+*************************/
+
+
+@media screen and (max-width:1200px) {
+  
+.left-count {
+    float:none;
+    margin-top:20px;
+    width:100%;
+    padding-top:10px;
+}
+
+.right-count {
+    float:none;
+    width:100%;
+    margin-top:0px;
+    padding-top:20px;
+}
+
+section {
+  background: #cccccc url("../img/paper_texture_01.png") repeat scroll 0 0;
+  height:auto;
+  margin: 0 auto;
+  min-width: 240px;
+  padding-top: 0.6em;
+  position: relative;
+  width: 100%;
+}
+
+h3, h4, h5, h6 {
+    color: #000;
+    font-family: "Raleway",sans-serif;
+    font-size: 1.4em;
+    margin: 0 auto 20px;
+    opacity: 0.5;
+    width: 100%;
+}
+
+}
+
+
+@media screen and (max-width:680px) {
+
+#frame {
+  width:80%;
+  margin:0 auto;
+  background:#eeeeee;
+  opacity:0.8;
+  text-align:left;
+  border:20px solid #fff;
+} 
+
+#menu-wrap {
+  width:230px;
+  
+}
+
+/************************
+NAV MAX-WIDTH 680 PX
+*************************/
+
+
+ul.topnav li:not(:first-child) {
+  display: none;
+
+}
+
+ul.topnav li.icon {
+  float: right;
+  display: inline-block;
+}
+
+ul.topnav.responsive {
+  position: relative;
+}
+  
+ul.topnav.responsive li.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+  
+ul.topnav.responsive li {
+  float: none;
+  display: inline;
+}
+  
+ul.topnav.responsive li a {
+  display: block;
+  text-align: left;
+}
+
+}
+
