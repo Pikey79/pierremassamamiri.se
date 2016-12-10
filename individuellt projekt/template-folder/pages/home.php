@@ -1,9 +1,12 @@
 
 
 <section>
-    <div class="index-img-wrap">
-      <img class="img-circle" src="img/1557732_10151882513731325_2105109648_n.jpg"/>
-    </div>
+    <div id="mastsealborder">
+      <div id="mastseal">
+         <img id="sealfront" alt="seal_front" src="img/1557732_10151882513731325_2105109648_n.jpg">
+         <img id="sealback" alt="seal_back" src="img/keep-calm.png">
+     </div>
+   </div> 
     <div class="left-count">
       <h2 class="count-header">Dagar till examen:</h2>
 <div id="clockdiv">

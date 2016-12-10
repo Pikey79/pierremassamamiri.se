@@ -1,6 +1,7 @@
 /************************
 GENERAL
 *************************/
+
 html {
   background-color:#fdfdfd;
   height:100%;
@@ -56,7 +57,7 @@ STARTPAGE
 *************************/
 
 section {
-  background: #cccccc url("../img/paper_texture_01.png") repeat scroll 0 0;
+  background: #cccccc url("img/paper_texture_01.png") repeat scroll 0 0;
   height: 240px;
   margin: 0 auto;
   min-width: 240px;
@@ -69,7 +70,7 @@ section {
   background: #eeeeee;
   float: left;
   height: 200px;
-  margin-top: -200px;
+  margin-top: -165px;
   width: 50%;
   color:#fff;
   opacity:0.7;
@@ -80,7 +81,7 @@ section {
   background: #ddd;
   float: right;
   height: 200px;
-  margin-top: -200px;
+  margin-top: -165px;
   width: 50%;
   color:#fff;
   opacity:0.7;
@@ -170,6 +171,43 @@ IMAGES
   margin-top:1em;
   position:relative;
   z-index:1;
+}
+
+
+
+#mastseal {
+    cursor: pointer;
+    height: 180px;
+    width: 180px;
+    margin:0 auto;
+
+
+}
+#mastseal > img {
+    backface-visibility: hidden;
+    height: 160px;
+    margin-left: -101px;
+    transition: transform 0.7s linear 0s;
+    width: 160px;
+    border-radius: 50%;
+    z-index:1;
+    border-radius:50%;
+    border:20px solid #eee;
+    margin-top:0.9em;
+    position:absolute;
+}
+#mastseal > #sealfront {
+    transform: perspective(600px) rotateY(0deg);
+}
+#mastseal > #sealback {
+    transform: perspective(600px) rotateY(180deg);
+    border:20px solid #ddd;
+}
+#mastseal:hover > #sealfront {
+    transform: perspective(600px) rotateY(-180deg);
+}
+#mastseal:hover > #sealback {
+    transform: perspective(600px) rotateY(0deg);
 }
 
 /************************
@@ -324,7 +362,7 @@ MEDIA QURIES
 }
 
 section {
-  background: #cccccc url("../img/paper_texture_01.png") repeat scroll 0 0;
+  background: #cccccc url("img/paper_texture_01.png") repeat scroll 0 0;
   height:auto;
   margin: 0 auto;
   min-width: 240px;
@@ -397,4 +435,5 @@ ul.topnav.responsive li a {
 }
 
 }
+
 
