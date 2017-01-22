@@ -1,12 +1,22 @@
 
-
+<?php 
+    $db = mysqli_connect('localhost', 'root', '', 'db_enskilt');
+    mysqli_query($db, "SET NAMES utf8");
+?>
 
   <section class="second">
 <h2>Mitt CV</h2>
   <div id="frame">
     <div id="cv-first">
-       <h3>VD Google. 1995 - 2005</h3>
-       <p>Det är ett välkänt faktum att läsare distraheras av läsbar text på en sida när man skall studera layouten. Poängen med Lorem Ipsum är att. 
+
+
+       <h3><?php 
+    $query = "SELECT * FROM pages WHERE id=4";
+    $pages_result = mysqli_query($db, $query);
+    $page = mysqli_fetch_assoc($pages_result);
+    echo $page['main_heading']; 
+?> </h3>
+       <p><?php echo $page['page_content1']; ?></p> 
        <a href="javascript:showOrHide();"><img class="show-more-button" src="img/show-more.png" alt="visa mer">
        </a>
     <div id="showOrHideDiv">
@@ -17,8 +27,15 @@
   
 </div>
 <div id="cv-second">
-<p><h3>VD Microsoft. 2005 - 2016</h3>
-Det är ett välkänt faktum att läsare distraheras av läsbar text på en sida när man skall studera layouten. Poängen med Lorem Ipsum är att det ger ett normalt ordflöde, till skillnad från "Text här, Text här", och ger intryck av att vara läsbar text.
+
+
+<h3><?php 
+    $query = "SELECT * FROM pages WHERE id=5";
+    $pages_result = mysqli_query($db, $query);
+    $page = mysqli_fetch_assoc($pages_result);
+    echo $page['main_heading']; 
+?>  </h3>
+<p><?php echo $page['page_content2']; ?></p>
 <a href="javascript:showOrHideSecond();">
     <img class="show-more-button" src="img/show-more.png" alt="visa mer">
   </a>

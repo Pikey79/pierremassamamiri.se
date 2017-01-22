@@ -19,6 +19,10 @@
         include ('pages/kontakt.php');
         break;
 
+    case 'portfolio':
+        include ('pages/portfolio.php');
+        break;
+
     default:
         include ('pages/home.php');
         break; 
