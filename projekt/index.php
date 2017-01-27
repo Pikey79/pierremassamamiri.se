@@ -23,6 +23,10 @@
         include ('pages/portfolio.php');
         break;
 
+    case 'hängagubbe':
+        include ('pages/hänga-gubbe.php');
+        break;
+
     default:
         include ('pages/home.php');
         break; 

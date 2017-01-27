@@ -3,7 +3,7 @@ GENERAL
 *************************/
 
 html {
-  background-color:#fdfdfd;
+  background-color:#fff;
   height:100%;
 }
 
@@ -17,12 +17,12 @@ body {
 }
 
 .second {
-  height: 90%;
+  height: 80%;
   padding-bottom:50px;
 }
 
 header {
-  background: #fdfdfd;
+  background: #fff;
 }
 
 footer {
@@ -46,10 +46,28 @@ h2, h3, h4, h5, h6 {
     color: #000;
     font-family: "Raleway",sans-serif;
     font-size: 1.4em;
-    
-    opacity: 0.6;
+    opacity: 0.8;
     text-align: center;
     width: 100%;
+}
+
+.login-link {
+  color:#999;
+  font-size:11px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
 }
 
 /************************
@@ -57,8 +75,7 @@ STARTPAGE
 *************************/
 
 section {
-  background: #cccccc url("img/paper_texture_01.png") repeat scroll 0 0;
-  height: 240px;
+  height: 302px;
   margin: 0 auto;
   min-width: 240px;
   padding-top: 0.6em;
@@ -98,7 +115,27 @@ CV
   background:#eeeeee;
   opacity:0.8;
   text-align:left;
-  border:20px solid #fff;
+  border:6px solid #ccc;
+}
+
+#frame-left {
+  background: #eeeeee none repeat scroll 0 0;
+    border: 20px solid #fff;
+    float: left;
+    margin-left: 80px;
+    opacity: 0.8;
+    text-align: left;
+    width: 40%;
+}
+
+#frame-right {
+  background: #eeeeee none repeat scroll 0 0;
+    border: 20px solid #fff;
+    float: right;
+    margin-right: 90px;
+    opacity: 0.8;
+    text-align: left;
+    width: 40%;
 }
 
 #cv-first {
@@ -127,7 +164,92 @@ CV
 
 .show-more-button {
   float:right;
-  margin-top:12px;
+}
+
+/************************
+PORTFOLIO
+*************************/
+
+#porfolio-frame {
+  width:80%;
+  margin:0 auto;
+  background:#eeeeee;
+  opacity:0.8;
+  text-align:left;
+  border:6px solid #ccc;
+  padding:20px;
+}
+
+ul.rig {
+  list-style: none;
+  font-size: 0px;
+  margin-left: -5.8%;
+}
+    
+ul.rig li {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 0 2.5% 2.5%;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-size: 1rem;
+  vertical-align: top;
+  box-shadow: 0 0 5px #ddd;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+    
+ul.rig li img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 10px;
+}
+    
+ul.rig li h3 {
+  margin: 0 0 5px;
+}
+    
+ul.rig li p {
+  font-size: .9em;
+  line-height: 1.5em;
+  color: #999;
+  text-align:center;
+}
+    
+
+ul.rig.columns-2 li {
+  width: 47.5%; 
+}
+    
+ul.rig.columns-3 li {
+  width: 30.83%; /* this value + 2.5 should = 33% */
+}
+    
+ul.rig.columns-4 li {
+  width: 22.5%; /* this value + 2.5 should = 25% */
+}
+     
+@media (max-width: 480px) {
+      
+ul.grid-nav li {
+  display: block;
+  margin: 0 0 5px;
+}
+  
+ul.grid-nav li a {
+  display: block;
+}
+      
+ul.rig {
+  margin-left: 0;
+}
+      
+ul.rig li {
+  width: 100% !important; /* over-ride all li styles */
+  margin: 0 0 20px;
+}
 }
 
 /************************
@@ -137,23 +259,47 @@ KONTAKT
 #mail {
   background:#ddd;
   text-align:center;
-  padding:30px;
+  padding:19px;
 }
 
 #phone {
   background:#fff;
   text-align:center;
-  padding:30px;
+  padding:18px;
 }
 
 #location {
   background:#eee;
   text-align:center;
-  padding:30px;
+  padding:19px;
 }
 
 /************************
-IMAGES
+HÄNGA GUBBE
+*************************/
+
+#btnGame {
+    background: #53512a none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    font-size: 20px;
+    opacity: 0.9;
+    padding: 16px 40px;
+    text-transform: uppercase;
+}
+
+#progressDisplay {
+  font-size:2em;
+}
+
+#hangman {
+  margin: 80px auto;
+  text-align: center;
+  width: 200px;
+}
+
+/************************
+FLIP IMAGE
 *************************/
 
 .img-circle {
@@ -173,16 +319,13 @@ IMAGES
   z-index:1;
 }
 
-
-
 #mastseal {
     cursor: pointer;
     height: 180px;
     width: 180px;
     margin:0 auto;
-
-
 }
+
 #mastseal > img {
     backface-visibility: hidden;
     height: 160px;
@@ -196,16 +339,20 @@ IMAGES
     margin-top:0.9em;
     position:absolute;
 }
+
 #mastseal > #sealfront {
     transform: perspective(600px) rotateY(0deg);
 }
+
 #mastseal > #sealback {
     transform: perspective(600px) rotateY(180deg);
     border:20px solid #ddd;
 }
+
 #mastseal:hover > #sealfront {
     transform: perspective(600px) rotateY(-180deg);
 }
+
 #mastseal:hover > #sealback {
     transform: perspective(600px) rotateY(0deg);
 }
@@ -219,7 +366,7 @@ ul.topnav {
   list-style-type: none;
   overflow: hidden;
   padding: 0;
-  width:340px;
+  width:350px;
   margin:0 auto;
 }
 
@@ -252,6 +399,7 @@ ul.topnav li.icon {
 COUNTDOWN
 *************************/
 
+
 body {
   text-align: center;
   background: transparent;
@@ -265,55 +413,36 @@ body {
   margin-bottom: 40px;
 }
 
-#clockdiv {
-  font-family: sans-serif;
-  color: #fff;
-  font-weight: 100;
-  text-align: center;
-  font-size: 30px;
-  margin-top:-30px;
+
+#timer {
+  margin:0 auto;
+  width:140px;
+  padding:10px;
 }
 
-#clockdiv > div {
-  padding: 10px;
-  background: transparent;
-  display: inline-block;
+span {
+  display: block;
+  font-size: 20px;
+  color: black;
 }
 
-#clockdiv div > span {
-  padding: 15px;
-  border-radius: 20%;
-  background: #000;
-  display: inline-block;
+#daysExam,
+#daysLia {
+  font-size: 20px;
+  float:left;
+  color:black;
+  opacity:0.8;
+}
+#hoursExam,
+#hoursLia {
+  font-size: 20px;
+  float:left;
+  color:black;
+  margin-left:16px;
+  opacity:0.8;
 }
 
-.smalltext {
-  padding-top: 5px;
-  font-size: 16px;
-  color:#000;
-}
 
-#clockdiv-2 {
-  font-family: sans-serif;
-  color: #fff;
-  font-weight: 100;
-  text-align: center;
-  font-size: 30px;
-  margin-top:-30px;
-}
-
-#clockdiv-2 > div {
-  padding: 10px;
-  background: transparent;
-  display: inline-block;
-}
-
-#clockdiv-2 div > span {
-  padding: 15px;
-  border-radius: 20%;
-  background: #000;
-  display: inline-block;
-}
 
 /*********************
 SHARE BUTTONS
@@ -340,6 +469,17 @@ ul.share-buttons .sr-only {
   overflow: hidden;
 }
 
+/*********************
+SHOW/HIDE TEXT
+*************************/
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+
 /************************
 MEDIA QURIES
 *************************/
@@ -349,7 +489,7 @@ MEDIA QURIES
   
 .left-count {
     float:none;
-    margin-top:20px;
+    margin-top:60px;
     width:100%;
     padding-top:10px;
 }
@@ -362,7 +502,6 @@ MEDIA QURIES
 }
 
 section {
-  background: #cccccc url("img/paper_texture_01.png") repeat scroll 0 0;
   height:auto;
   margin: 0 auto;
   min-width: 240px;
@@ -435,5 +574,4 @@ ul.topnav.responsive li a {
 }
 
 }
-
 

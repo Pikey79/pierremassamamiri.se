@@ -1,6 +1,6 @@
 <?php
 $db = mysqli_connect('localhost', 'root', '', 'db_enskilt');
-//$db = mysqli_connect("localhost", "root", "", "company");
+
 mysqli_query($db, "SET NAMES utf8");
 
 /*********************************************************************************************/
@@ -14,3 +14,4 @@ if(isset($_POST["id"])) {
 	$query = "UPDATE pages SET main_heading = '$new_heading', page_content1 = '$new_text1', page_content2 = '$new_text2' WHERE id = $id";
 	mysqli_query($db, $query);   
 }
+

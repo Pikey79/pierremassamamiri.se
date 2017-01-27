@@ -17,6 +17,7 @@
         <li><a href="index.php?page=cv">Mitt cv</a></li>
         <li><a href="index.php?page=kontakt">Kontakt</a></li>
         <li><a href="index.php?page=portfolio">Portfolio</a></li>
+        
         <li class="icon">
         <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
         </li>

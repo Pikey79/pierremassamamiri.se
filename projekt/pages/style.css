@@ -28,14 +28,14 @@ input[type=text], input[type=password] {
 }
 
 input[type=submit] {
-	width: 100%;
-	background-color: #3ca459;
-	color: #fff;
-	padding: 10px;
-	font-size: 20px;
-	cursor: pointer;
-	margin-bottom: 15px;
-	border-style: none;
+	background-color: #ccc;
+    border-style: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 50%;
 }
 
 
