@@ -3,38 +3,36 @@
     $db = mysqli_connect('localhost', 'root', '', 'db_enskilt');
     mysqli_query($db, "SET NAMES utf8");
 ?>
+
 <section class="second">
 <h2>Mitt CV</h2>
   <div id="frame">
-    <div id="cv-first">
+    <ul id="toggle-view">
+  <li>
     <h3><?php 
     $query = "SELECT * FROM pages WHERE id=4";
     $pages_result = mysqli_query($db, $query);
     $page = mysqli_fetch_assoc($pages_result);
     echo $page['main_heading']; 
 ?> </h3> 
-       <a href="javascript:showOrHide();"><img class="show-more-button" src="img/show-more.png" alt="visa mer">
-       </a>
-    <div id="showOrHideDiv">
-      <p>
-       <?php echo $page['page_content1']; ?>
-      </p>
+    <span>+</span>
+    <div class="panel">
+      <p><?php echo $page['page_content1']; ?></p>
     </div>
-  </div>
-<div id="cv-second">
-<h3><?php 
+  </li>
+  <li>
+    <h3><?php 
     $query = "SELECT * FROM pages WHERE id=5";
     $pages_result = mysqli_query($db, $query);
     $page = mysqli_fetch_assoc($pages_result);
     echo $page['main_heading']; 
 ?>  </h3>
-<a href="javascript:showOrHideSecond();">
-    <img class="show-more-button" src="img/show-more.png" alt="visa mer">
-  </a>
-<div id="showOrHideDivSecond">
-<p><?php echo $page['page_content2']; ?></p>
-</div>
-</div>
+    <span>+</span>
+    <div class="panel">
+      <p><?php echo $page['page_content2']; ?></p>
+    </div>
+  </li>
+</ul>
 </div>
 <ul class="share-buttons">
   <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.pierremassamiri.se&t=Pierre%20Massamiri" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="img/Facebook.png"></a></li>
@@ -44,8 +42,8 @@
 </section>
 
 <?php include('footer.php'); ?>
+  <script src="js/toggle.js"></script>
   <script src="js/game.js"></script>
-  <script src="js/show-hide.js"></script>
   <script src="js/responsive-menu.js"></script>
 </body> 
 </html>

@@ -2,6 +2,7 @@
 
 
 <?php
+if (isset($_GET['page'])) {
    $p = $_GET['page'];
 
 
@@ -31,6 +32,10 @@
         include ('pages/home.php');
         break; 
    }
+
+   } else {
+   include ('pages/home.php');
+}
 ?>
 
 
